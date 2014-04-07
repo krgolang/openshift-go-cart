@@ -1,21 +1,21 @@
-Name: go
-Cartridge-Short-Name: GO
-Display-Name: Go 1.2.1
+Name: gox
+Cartridge-Short-Name: GOX
+Display-Name: Gox 1.2.1
 Version: "1.2.1"
 Versions: ["1.2.1", "1.0.3"]
 Website: https://github.com/krgolang/openshift-go-cart
-Cartridge-Version: 0.0.1
-Cartridge-Vendor: smarterclayton
+Cartridge-Version: 0.0.2
+Cartridge-Vendor: krgolang
 Categories:
   - service
   - golang
   - web_framework
 Provides:
-  - go-1.2
-  - "go"
-  - "go (version) = 1.2.1"
-  - "go (version) = 1.2"
-  - "go (version) = 1"
+  - gox-1.2
+  - "gox"
+  - "gox (version) = 1.2.1"
+  - "gox (version) = 1.2"
+  - "gox (version) = 1"
 Scaling:
   Min: 1
   Max: -1
@@ -41,7 +41,7 @@ Subscribes:
     Required : false
 Group-Overrides:
   - components:
-    - go-1.1
+    - gox-1.2
     - web_proxy
 Endpoints:
   - Private-IP-Name:   IP
@@ -58,14 +58,14 @@ Endpoints:
 Install-Build-Required: true
 Version-Overrides:
   '1.0.3':
-     Display-Name: Go 1.0.3
+     Display-Name: Gox 1.0.3
      Provides:
-      - go-1.0
-      - "go"
-      - "go (version) = 1.0.3"
-      - "go (version) = 1.0"
-      - "go (version) = 1"
+      - gox-1.0
+      - "gox"
+      - "gox (version) = 1.0.3"
+      - "gox (version) = 1.0"
+      - "gox (version) = 1"
      Group-Overrides:
        - components:
-         - go-1.0
+         - gox-1.0
          - web_proxy
